@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo5271661744537842753"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/entry"
+        android:layout_marginBottom="300dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Вход"
+        app:layout_constraintBottom_toTopOf="@+id/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать!"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_marginBottom="70dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        Выполните вход \n или зарегистрируйтесь."
+        android:textSize="12sp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:background="@drawable/edittext_corners"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/email"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:hint="Введите вашу почту"
+        android:textColor="@color/black"/>
+    <EditText
+        android:background="@drawable/edittext_corners"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:hint="Введите пароль"
+        android:textColor="@color/black"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#A1A1A1"
+        android:id="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/press"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/press"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#00FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажмите сюда"
+        android:textColor="#FF9800"/>
+    <TextView
+        app:layout_constraintEnd_toStartOf="@+id/press"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
